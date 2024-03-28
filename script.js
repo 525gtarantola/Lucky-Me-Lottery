@@ -32,6 +32,27 @@ function displayNames() {
     }
 }
 
+function pickRandomName() {
+    const randomNameDiv = document.getElementById('randomName')
+    randomNameDiv.textContent = ''
+
+    //generate and select random name from namesArray
+    const randomNumber = Math.floor(Math.random() * namesArray.length)
+    const randomName = namesArray[randomNumber]
+
+    randomNameDiv.textContent = randomName
+
+    namesArray.splice(randomNumber, 1)
+
+    displayNames(); 
+
+
+
+    
+}
+
 // Event Listener for the button click to add name
 document.getElementById('addNameBtn').addEventListener('click' , addName)
+// Event Listener for the button click to select and dsplay a random name
+document.getElementById('pickRandomBtn').addEventListener('click' , pickRandomName)
 
