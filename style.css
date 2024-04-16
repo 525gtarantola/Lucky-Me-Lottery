@@ -2,5 +2,11 @@ body {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-color: rgb(207, 233, 207);
      
 }
+
+.lolz {
+    margin: 20px;
+}
+
